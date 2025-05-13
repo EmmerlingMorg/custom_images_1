@@ -23,8 +23,8 @@ jobs:
           name: job_two_custom
       script: echo "condition with job two"
      - name: "job three"
-      vm: 
+       vm: 
         create:
           name: job_three_custom
-      script: echo "condition with job three"
+       script: echo "condition with job three"
    
