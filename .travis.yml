@@ -1,5 +1,15 @@
 os: linux
 dist: focal
+vm:
+  create:
+    name: example_r
+before_install:
+  - sudo apt-get -y install libxml2-dev
+addons:
+  apt:
+    update: true
+script:
+  - echo "OK8"
 jobs:
   include:
     - name: "job one"
