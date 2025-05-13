@@ -1,4 +1,4 @@
-os: freebsd
+os: windows
 #dist: focal
 
 jobs:
