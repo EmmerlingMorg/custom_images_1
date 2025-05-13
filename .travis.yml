@@ -1,0 +1,15 @@
+os: linux
+dist: focal
+
+jobs:
+  include:
+    - name: "job one"
+      vm: 
+        create:
+          name: custom_job_one
+      script: echo "condition with job one"
+    - name: "job two"
+      vm: 
+        create:
+          name: custom_job_two
+      script: echo "condition with job two"
