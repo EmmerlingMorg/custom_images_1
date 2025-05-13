@@ -1,8 +1,5 @@
 os: linux
 dist: focal
-vm: 
-  create:
-    name: example_root_2
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -15,11 +12,16 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: example_job_one
+          name: job_one
       script: echo "condition with job one"
     - name: "job two"
       vm: 
         create:
-          name: example_job_t
+          name: job_two
       script: echo "condition with job two"
-  
+     - name: "job three"
+      vm: 
+        create:
+          name: job_three
+      script: echo "condition with job three"
+   
