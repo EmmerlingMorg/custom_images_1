@@ -5,16 +5,16 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: job_one
+          name: job_one_custom
       script: echo "condition with job one"
     - name: "job two"
       vm: 
         create:
-          name: job_two
+          name: job_two_custom
       script: echo "condition with job two"
      - name: "job three"
       vm: 
         create:
-          name: job_three
+          name: job_three_custom
       script: echo "condition with job three"
    
