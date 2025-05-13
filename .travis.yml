@@ -13,9 +13,9 @@ jobs:
         create:
           name: custom_job_two
       script: echo "condition with job two"
-     - name: "job three"
-       vm: 
+    - name: "job three"
+      vm: 
         create:
           name: custom_job_three
-       script: echo "condition with job three"
+      script: echo "condition with job three"
    
