@@ -15,11 +15,11 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: example_one
+          name: example_job_one
       script: echo "condition with job one"
     - name: "job two"
       vm: 
         create:
-          name: example_two
+          name: example_job_two
       script: echo "condition with job two"
   
