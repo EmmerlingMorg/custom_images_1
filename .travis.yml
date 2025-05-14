@@ -1,8 +1,11 @@
 os: linux
 dist: focal
+deploy:
+  provider: gcs
+  detect_encoding: true # <== default is false
 vm: 
   create:
-    name: custom_julia_example_one
+    name: image_one
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
