@@ -1,9 +1,10 @@
 os: linux
 dist: focal
-arch: s390x
+language: generic
 vm: 
+  size: [large]
   create:
-    name: custom_with_arch
+    name: custom_large
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
