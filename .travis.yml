@@ -5,7 +5,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: custom_large
+    name: custom_large_sec
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
