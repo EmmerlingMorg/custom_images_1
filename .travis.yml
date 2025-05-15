@@ -1,11 +1,9 @@
 os: linux
 dist: focal
-deploy:
-  provider: gcs
-  detect_encoding: true # <== default is false
+arch: s390x
 vm: 
   create:
-    name: new_custom
+    name: custom_with_arch
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
