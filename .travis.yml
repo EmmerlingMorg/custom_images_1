@@ -5,7 +5,7 @@ deploy:
   detect_encoding: true # <== default is false
 vm: 
   create:
-    name: same_image
+    name: new_custom
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
