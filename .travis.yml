@@ -16,6 +16,6 @@ jobs:
     - name: "job three"
       vm: 
         create:
-          name: generic_image_c
+          name: generic_image_cc
       script: echo "condition with job three"
    
