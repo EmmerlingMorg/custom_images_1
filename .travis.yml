@@ -25,7 +25,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: generic_image_lc
+          name: generic_image_not_c
       script: 
         - echo "condition with job three"
         - echo $TRAVIS_COMMIT_MESSAGE
