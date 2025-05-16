@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: generic_image
+    name: generic_image_ccc
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
