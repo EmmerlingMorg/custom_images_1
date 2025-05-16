@@ -6,16 +6,16 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: custom_job_one_b
+          name: generic_image
       script: echo "condition with job one"
     - name: "job two"
       vm: 
         create:
-          name: custom_job_two_b
+          name: generic_image_b
       script: echo "condition with job two"
     - name: "job three"
       vm: 
         create:
-          name: custom_job_three_b
+          name: generic_image_c
       script: echo "condition with job three"
    
