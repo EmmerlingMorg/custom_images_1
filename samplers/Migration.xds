@@ -1,0 +1,52 @@
+{
+    "name": "Migration",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "7.8.0.59",
+            "frameworkVersion": "7.8.0.33"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:56026/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.3.6",
+    "xdsBuild": 11,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern78",
+    "viewOrderMap": {
+        "view": [
+            "159037f2-d82e-4828-a1db-ca460a27001b",
+            "2ef9fc84-76d2-4e8c-804b-48942f48480c",
+            "e6098011-e612-4aef-bff1-c4d806e6c2fb"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "406aa27b-1193-41e0-ab0a-abaef60b25f1",
+            "6d8f9db9-6a68-4916-a190-0cf9e018da7b",
+            "1d529989-ef02-43b0-ab50-d2a5670030fe"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
