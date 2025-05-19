@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: image_loop_new
+    name: try_im
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -77,4 +77,27 @@ script:
   - echo "OK"
   - echo "sleep 1200"
   - echo "sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200"
+  class TestAction extends Action
+{
+    public function perform() {
+        $p = page('test');
+        $data = $p->details()->yaml();
+        $newItem = [
+        'info' => 'Some text',
+        'filesfield' => Data::encode(['himalaya.jpg'], 'yaml'),
+        ];
+
+        $data[] = $newItem;
+
+        $data = Data::encode($data, 'yaml');
+
+        try {
+        $p->update([
+            'details' => $data,
+        ]);
+        } catch(Exception $e) {
+        return $e->getMessage();
+        }
+    }
+}
   - echo "build with 1200 sec sleep finished"
