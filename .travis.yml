@@ -7,7 +7,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: generic_job_one
+          name: one_50
       script: 
         - echo "condition with job one"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -16,7 +16,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: generic_job_two
+          name: two_60
       script: 
         - echo "condition with job two"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -25,7 +25,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: generic_job_three
+          name: three_70
       script: 
         - echo "condition with job three"
         - echo $TRAVIS_COMMIT_MESSAGE
