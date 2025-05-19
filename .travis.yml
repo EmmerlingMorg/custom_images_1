@@ -4,13 +4,28 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: generic_image_700_sec
+    name: generic_image_1200_sec
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
   apt:
     update: true
 script:
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 100
+  - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 100
+  - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 100
+  - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 100
+  - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 100
+  - echo "OK"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
