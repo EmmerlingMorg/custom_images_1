@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: generic_sleep_image_1200_sec
+    name: generic_large_image_1200_sec
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -15,48 +15,60 @@ script:
   - sleep 100
   - echo "OK"
   - echo "sleep 100"
+  - echo "sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 200"
+  - echo "sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 300"
+  - echo "sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "slep 400"
+  - echo "slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 500"
+  - echo "sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 600"
+  - echo "sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 700"
+  - echo "sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 800"
+  - echo "sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 900"
+  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 1000"
+  - echo "sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 1100"
+  - echo "sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
   - echo "sleep 1200"
+  - echo "sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200"
   - echo "build with 1200 sec sleep finished"
