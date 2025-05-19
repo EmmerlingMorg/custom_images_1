@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: generic_600
+    name: generic_700
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -14,15 +14,21 @@ script:
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
