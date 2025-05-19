@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: samplers_image
+    name: samplers_imageLarge
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
