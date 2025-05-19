@@ -15,9 +15,6 @@ script:
   - sleep 100
   - echo "OK"
   - echo "sleep 100"
-  - {% for var in (0 1000); do
-        echo $var; %}
-
   - echo "sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - echo "OK"
