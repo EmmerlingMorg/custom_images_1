@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: summaric_image
+    name: summaric_image_loop
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -15,6 +15,9 @@ script:
   - sleep 100
   - echo "OK"
   - echo "sleep 100"
+  for var in $(0 1000); do
+            echo $var ${!var};
+  done
   - echo "sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - echo "OK"
