@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: long_text_im
+    name: sampler_image
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -77,5 +77,4 @@ script:
   - echo "OK"
   - echo "sleep 1200"
   - echo "sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200"
-  - echo "{Yaml is a markup language, like xml. And like xml and json, it is used for data encoding. But it is advertised as more human readable than json.It stands for "Yet Another Markup Language"Yaml is typically used to store settings for apps.Now let's uncover the truth:Some nerd computer scientist showed that yaml is technically not a markup language. I think yaml allows for recursive definitions of data structures or something. But the technical reasoning on why yaml is not a markup language is lost on me.Yaml sits in a broader category: data serialization formatYaml is also uses for a kind of declarative programming.An ok example of this would be Kubernetes object configuration files. You say what pods, loadbalancers and structures you need in YAML, and kubernetes builds it for you, but you don't have to tell it how to build it, just what to build.A sucky example of this is ansible playbooks. If the ansible module exists, then yes you can write your yaml ansible playbooks in a very nice declarative way, but for more complex structures, usually there isn't a builtin ansible module, so you find yourself needing to specify the step by step imperative instructions. This means you are trying to use yaml like a programming language, but yaml is absolutely not a programming language, and it is kinda miserable writing these kind of imperative ansible playbooks.Ideally if you need complex logic, you would make a custom ansible module in python, and then the yaml ansible playbook could just be the declarative programming it was meant to be. There are some other technical reasons I hate ansible but the encouragement to misuse yaml is the biggest one.}"
   - echo "build with 1200 sec sleep finished"
