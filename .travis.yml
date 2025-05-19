@@ -4,7 +4,7 @@ language: generic
 vm: 
   size: [large]
   create:
-    name: generic_image_1200_sec
+    name: generic_sleep_image_1200_sec
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -14,36 +14,49 @@ script:
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 200"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 300"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "slep 400"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 500"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 600"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 700"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 800"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 900"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 1000"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 1100"
   - echo $TRAVIS_COMMIT_MESSAGE
   - sleep 100
   - echo "OK"
+  - echo "sleep 1200"
+  - echo "build with 1200 sec sleep finished"
