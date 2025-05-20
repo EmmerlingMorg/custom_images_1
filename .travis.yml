@@ -15,14 +15,10 @@ env:
 addons:
   snaps:
     - hugo
-  apt:
-    update: true
 vm: 
   size: [large]
   create:
     name: snap_image
-before_install:
-  - sudo apt-get -y install libxml2-dev
 install: skip
 jobs:
   include:
@@ -48,6 +44,7 @@ jobs:
     - name: container-security
       if: env(CONTAINER_SECURITY) =~ /^(?i)(true|1).*/
     - name: update-cd-wiki
+      script:
       - echo $TRAVIS_COMMIT_MESSAGE
       - sleep 100
       - echo "OK"
