@@ -81,4 +81,3 @@ script:
   - echo "sleep 1200"
   - echo "sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200"
   - echo "build with 1200 sec sleep finished"
- Copy custom_images:.travis.yml
