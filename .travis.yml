@@ -1,0 +1,14 @@
+os: linux
+language: generic
+dist: focal
+env:
+  global:
+    - JOB_DELAY=180
+vm:
+  create:
+    name: job_conflict
+script:
+  - echo "Running Build"
+  - sleep $JOB_DELAY
+  - $a=123+24
+  - echo $a
