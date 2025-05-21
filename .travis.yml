@@ -13,6 +13,6 @@ vm:
   create:
     name: job_error
 script:
-  - echo "Running"$env
+  - echo $env
   - sleep $JOB_DELAY
 
