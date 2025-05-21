@@ -2,13 +2,17 @@ os: linux
 language: generic
 dist: focal
 env:
+  - INDEX=1
+  - INDEX=2
+  - INDEX=3
+  - INDEX=4
+  - INDEX=5
   global:
-    - JOB_DELAY=180
+    - JOB_DELAY=700
 vm:
   create:
     name: job_error
 script:
-  #- echo "Running Build"
-  #- sleep $JOB_DELAY
-  - $a=123+24
-  #- echo $a
+  - echo "Running"$env
+  - sleep $JOB_DELAY
+
