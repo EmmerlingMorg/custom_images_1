@@ -18,7 +18,7 @@ addons:
 vm: 
   size: [large]
   create:
-    name: snap_image
+    name: control_10jobs_recheck
 install: skip
 jobs:
   include:
