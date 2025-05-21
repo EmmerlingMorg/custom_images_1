@@ -7,12 +7,12 @@ vm:
 jobs:
   include:
     - name: "job one"
-     # vm: 
-      #  create:
-       #   name: jobs_level_image
+      vm: 
+        create:
+          name: jobs_level_image
       script: echo "condition with job one"
-    #- name: "job two"
-      #vm: 
-      #  create:
-      #    name: custom_job_two
-     # script: echo "condition with job two"
+    - name: "job two"
+      vm: 
+        create:
+          name: custom_job_two
+      script: echo "condition with job two"
