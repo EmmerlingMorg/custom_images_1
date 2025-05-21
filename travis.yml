@@ -1,0 +1,17 @@
+#Oksana example
+os: linux
+language: generic
+dist: focal
+
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Create custom image"
+      vm:
+        create:
+          name: cust-image-14
+    - stage: "Tests"
+      name: "Create unique custom image"
+      vm:
+        create:
+          name: job-unique-2
