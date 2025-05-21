@@ -6,9 +6,9 @@ env:
     - JOB_DELAY=180
 vm:
   create:
-    name: job_conflict
+    name: job_error
 script:
-  - echo "Running Build"
-  - sleep $JOB_DELAY
+  #- echo "Running Build"
+  #- sleep $JOB_DELAY
   - $a=123+24
-  - echo $a
+  #- echo $a
