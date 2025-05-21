@@ -9,7 +9,7 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: job_one_level_image
+          name: jobs_level_image
       script: echo "condition with job one"
     - name: "job two"
       #vm: 
