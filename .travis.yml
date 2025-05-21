@@ -7,12 +7,10 @@ env:
   - INDEX=3
   - INDEX=4
   - INDEX=5
-  global:
-    - JOB_DELAY=700
 vm:
   create:
     name: job_error
 script:
   - echo $env
-  - sleep $JOB_DELAY
+  - sleep 700
 
