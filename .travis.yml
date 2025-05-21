@@ -9,7 +9,7 @@ env:
   - INDEX=5
 vm:
   create:
-    name: job_error
+    name: control_recheck
 script:
   - echo $env
   - sleep 700
