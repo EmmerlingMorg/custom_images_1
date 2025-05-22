@@ -1,21 +1,21 @@
 dist: focal
 #vm: 
 #  create:
-#    name: root_image_12
+#    name: root_image_3
 
 jobs:
   include:
     - name: "job one"
       vm: 
         create:
-          name: job_one_level_im
+          name: job_one_level_3
       script: 
         - echo "condition with job one"
         - sleep 700
     - name: "job two"
       vm: 
         create:
-          name: job_two_level_im
+          name: job_two_level_3
       script: 
         - echo "condition with job two"
         - sleep 700
