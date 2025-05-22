@@ -1,17 +1,17 @@
 dist: focal
-vm: 
-  create:
-    name: root_image_12
+#vm: 
+#  create:
+#    name: root_image_12
 
 jobs:
   include:
     - name: "job one"
       vm: 
         create:
-          name: job_one_level
+          name: job_one_level12
       script: echo "condition with job one"
     - name: "job two"
       vm: 
         create:
-          name: job_two_level_2
+          name: job_two_level_12
       script: echo "condition with job two"
