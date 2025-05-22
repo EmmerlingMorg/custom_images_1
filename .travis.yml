@@ -1,7 +1,7 @@
 dist: focal
 vm: 
   create:
-    name: root_image_1
+    name: root_image_12
 
 jobs:
   include:
