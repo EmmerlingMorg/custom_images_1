@@ -18,4 +18,4 @@ jobs:
           name: job_two_level_3
       script: 
         - echo "condition with job two"
-        - sleep 700
+        - sleep 70
