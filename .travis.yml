@@ -8,14 +8,14 @@ jobs:
     - name: "job one"
       vm: 
         create:
-          name: job_one_level_13
+          name: job_one_level_15
       script: 
         - echo "condition with job one"
-        - sleep 7
+        - sleep 70
     - name: "job two"
       vm: 
         create:
-          name: job_two_level_14
+          name: job_two_level_15
       script: 
         - echo "condition with job two"
         - sleep 70
