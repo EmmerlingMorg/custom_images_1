@@ -11,7 +11,7 @@ jobs:
           name: job_one_level_18
       script: 
         - echo "condition with job one"
-        - sleep 700
+        - sleep 70
     - name: "job two"
       vm: 
         use:
