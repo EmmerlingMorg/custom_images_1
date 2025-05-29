@@ -12,11 +12,11 @@ jobs:
           name: job_one_level_16
       script: 
         - echo "condition with job one"
-        - sleep 70
+        - sleep 7
     - name: "job two"
       vm: 
         use:
           name: job_two_level_15
       script: 
         - echo "condition with job two"
-        - sleep 70
+        - sleep 7
