@@ -8,15 +8,15 @@ jobs:
   include:
     - name: "job one"
       vm: 
-        create:
-          name: job_one_level_19
+        use:
+          name: job_one_level_16
       script: 
         - echo "condition with job one"
         - sleep 70
     - name: "job two"
       vm: 
-        create:
-          name: job_two_level_19
+        use:
+          name: job_two_level_15
       script: 
         - echo "condition with job two"
         - sleep 70
