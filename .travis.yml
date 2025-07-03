@@ -1,22 +1,14 @@
-os: freebsd
-#dist: focal
-#vm: 
-#  create:
-#    name: root_image_3
+os: linux
+language: generic
+dist: focal
 
-jobs:
-  include:
-    - name: "job one"
-      vm: 
-        use:
-          name: job_one_level_16
-      script: 
-        - echo "condition with job one"
-        - sleep 7
-    - name: "job two"
-      vm: 
-        use:
-          name: job_two_level_15
-      script: 
-        - echo "condition with job two"
-        - sleep 17
+vm:
+  create:
+    name: mateusz-custom
+
+script:
+  
+echo "Creating custom file"
+sudo mkdir /my-custom-dir
+echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
+sudo cat /my-custom-dir/my_custom_file.txt
